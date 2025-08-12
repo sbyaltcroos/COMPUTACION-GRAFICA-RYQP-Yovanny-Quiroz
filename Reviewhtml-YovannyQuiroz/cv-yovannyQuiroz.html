@@ -1,182 +1,101 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CV Yovanny Quiroz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum de Yovanny Quiroz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: linear-gradient(135deg, #1E3A8A, #3B82F6, #93C5FD);
-            background-attachment: fixed;
-            color: #333;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
         }
-        main {
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 12px;
+        .container {
             max-width: 900px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: auto;
+            padding: 20px;
         }
         header {
-            text-align: center; 
-            background: linear-gradient(90deg, #1E3A8A, #2563EB);
-            color: white; 
-            padding: 20px; 
-            border-radius: 12px 12px 0 0;
+            text-align: center;
+            padding: 30px 0;
         }
-        nav {
-            text-align: center; 
-            margin-top: 15px;
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
         }
-        nav a {
-            margin: 0 10px; 
-            color: #1E3A8A; 
-            font-weight: bold;
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #ffdd57;
+            margin-top: 30px;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        .info {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #ffdd57;
             text-decoration: none;
         }
-        nav a:hover {
+        a:hover {
             text-decoration: underline;
-        }
-        table {
-            border-collapse: collapse; 
-            width: 100%;
-        }
-        thead {
-            background-color: #1E3A8A; 
-            color: white;
-        }
-        aside {
-            background-color: #e0e7ff; 
-            padding: 10px; 
-            border-radius: 8px;
-        }
-        img {
-            border-radius: 50%; 
-            border: 3px solid #1E3A8A; 
-            width: 150px; 
-            height: 150px; 
-            object-fit: cover;
-        }
-        footer {
-            background: linear-gradient(90deg, #1E3A8A, #2563EB);
-            color: white; 
-            text-align: center; 
-            padding: 10px; 
-            margin-top: 20px; 
-            border-radius: 0 0 12px 12px;
         }
     </style>
 </head>
 <body>
-
-    <main>
-        <!-- Encabezado -->
+    <div class="container">
         <header>
-            <h1 style="margin: 0;">Currículum Vitae</h1>
-            <h2 style="margin: 0;">Yovanny Quiroz</h2>
-            <p style="margin: 0;">Desarrollador Junior | Estudiante de Ingeniería</p>
+            <img src="https://raw.githubusercontent.com/sbyaltcroos/COMPUTACION-GRAFICA-RYQP-Yovanny-Quiroz/develop/Reviewhtml-YovannyQuiroz/im%20perfil.jpg" alt="Foto de perfil de Yovanny Quiroz">
+            <h1>Yovanny Quiroz</h1>
+            <p>Desarrollador en formación | Entusiasta de la tecnología</p>
         </header>
-
-        <!-- Barra de navegación -->
-        <nav>
-            <a href="#perfil">Perfil</a> |
-            <a href="#experiencia">Experiencia</a> |
-            <a href="#educacion">Educación</a> |
-            <a href="#contacto">Contacto</a>
-        </nav>
-
-        <hr>
-
-        <!-- Perfil -->
-        <section id="perfil" style="margin-bottom: 20px;">
-            <article>
-                <h2 style="color: #1E3A8A;">Perfil Profesional</h2>
-                <p>
-                    Soy un <strong>programador junior</strong> con conocimientos en 
-                    <em>Python, SQL y desarrollo de interfaces</em>. Apasionado por el aprendizaje continuo
-                    y con interés en el <mark style="background-color: yellow;">desarrollo web</mark>.
-                </p>
-                <blockquote style="background-color: #e0e7ff; padding: 10px; border-left: 5px solid #1E3A8A;">
-                    "La programación no es solo código, es creatividad aplicada a resolver problemas."
-                </blockquote>
-            </article>
+        
+        <section class="info">
+            <h2>Datos de Contacto</h2>
+            <p><strong>Email:</strong> <a href="mailto:yovanny@gmail.com">yovanny@gmail.com</a></p>
+            <p><strong>Teléfono:</strong> 302 633 2114</p>
         </section>
-
-        <!-- Experiencia -->
-        <section id="experiencia">
-            <h2 style="color: #1E3A8A;">Experiencia Laboral</h2>
-            <table border="1">
-                <caption><strong>Historial de trabajo</strong></caption>
-                <thead>
-                    <tr>
-                        <th>Puesto</th>
-                        <th>Empresa</th>
-                        <th>Año</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Desarrollador Freelance</td>
-                        <td>Independiente</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Auxiliar de Restaurante</td>
-                        <td>La Cocina de Nariño</td>
-                        <td>2023</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <!-- Educación -->
-        <section id="educacion" style="margin-bottom: 20px;">
-            <h2 style="color: #1E3A8A;">Educación</h2>
+        
+        <section class="info">
+            <h2>Experiencia</h2>
             <ul>
-                <li>Ingeniería en Computación Gráfica - Universidad de Nariño</li>
-                <li>Curso de Desarrollo Web - OpenBootcamp</li>
+                <li>Desarrollo de aplicaciones con Python y Flet.</li>
+                <li>Diseño mecánico en SolidWorks.</li>
+                <li>Gestión de bases de datos en SQL y Firebase.</li>
             </ul>
         </section>
-
-        <!-- Habilidades -->
-        <section>
-            <h2 style="color: #1E3A8A;">Habilidades</h2>
-            <ol>
-                <li>Programación en Python</li>
-                <li>Diseño de Interfaces con Flet y PyQt</li>
-                <li>Modelado 3D en SolidWorks</li>
-            </ol>
+        
+        <section class="info">
+            <h2>Educación</h2>
+            <ul>
+                <li>Estudiante de Ingeniería.</li>
+                <li>Formación en programación y desarrollo web.</li>
+            </ul>
         </section>
-
-        <hr>
-
-        <!-- Información adicional -->
-        <aside>
-            <h3 style="color: #1E3A8A;">Datos curiosos</h3>
-            <p>En mi tiempo libre disfruto aprender,viajar en moto conocer lugares...      </p>
-        </aside>
-
-        <!-- Imagen y enlace -->
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="https://via.placeholder.com/150" alt="Foto de perfil">
-            <br>
-            <small>Foto de perfil</small>
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.linkedin.com" target="_blank" style="color: #1E3A8A;">Visita mi LinkedIn</a>
-        </div>
-
-        <!-- Pie de página -->
-        <footer id="contacto">
-            <p>Contacto: <span style="font-weight: bold;">yovanny@gmail.com</span> | Tel: 3026332114</p>
-            <p>&copy; 2025 Yovanny Quiroz</p>
-        </footer>
-    </main>
-
+        
+        <section class="info">
+            <h2>Datos curiosos</h2>
+            <ul>
+                <li>Me encanta el paintball y la apicultura.</li>
+                <li>Fan de aprender cosas nuevas todos los días.</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
