@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-principal: #ff4900;
+  --color-secundario: #0093FF;
+  --color-terciario: #c500ff;
+  --color-link: #001bff;
+  --color-link-visited: #4CAF50;
+  --color-link-hover: #ff6600;
+  --color-tabla-header-bg: #000000;
+  --color-tabla-header-text: #ffffff;
+  --color-tabla-filas: #bec1c3;
+  --color-tabla-central-bg: #045795;
+  --color-tabla-central-text: #ffffff;
+}
+
+
+
+/* HTML y Body */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+/* Título H2 */
+h2 {
+  color: var(--color-principal);
+  font-size: 2rem;
+}
+
+/* Párrafos */
+p {
+  font-size: 1rem;
+  color: var(--color-secundario);
+  font-family: Arial, sans-serif;
+}
+
+p.nerko {
+  font-size: 0.75rem; /* 12px ≈ 0.75rem */
+  color: var(--color-terciario);
+  font-family: 'Nerko One', cursive;
+}
+
+
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+th {
+  background-color: var(--color-tabla-header-bg);
+  color: var(--color-tabla-header-text);
+  font-size: 1.5rem;
+  padding: 8px;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+  font-size: 1.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-tabla-filas);
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-tabla-central-bg);
+  color: var(--color-tabla-central-text);
+}
